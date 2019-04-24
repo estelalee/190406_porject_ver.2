@@ -1,0 +1,110 @@
+.product{
+    border-bottom: 1px solid #eeeeee;
+}
+
+.product__container {
+    max-width: $content-width;
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+.product__title{
+    display: flex;
+    justify-content: center;
+}
+
+.title__text {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: $sub-color;
+    padding: 10px 45px;
+    display: inline-flex;
+    align-content: center;
+    border: 2px $sub-color solid;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.content__container {
+    max-width: $content-width;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+}
+
+.product__card {
+    width: 25%;
+    font-size: 0;
+    margin: 50px 50px 0 50px;
+
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+
+    span {
+        position: absolute;
+        z-index: 200;
+    }
+}
+
+.card__tag__new {
+    width: 200px;
+    height: 200px;
+    background-color: $main-color;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: -25%;
+    left: -30%;
+    z-index: 100;
+}
+
+.card__tag__hot {
+    width: 200px;
+    height: 200px;
+    background-color: $sub-color;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: -25%;
+    left: -30%;
+    z-index: 100;
+}
+
+.card__text {
+    background-color: rgba($color: $main-color, $alpha: 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.card__title {
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+}
+
+.card__p {
+    font-size: 1.4rem;
+    text-align: start;
+    
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid $sub-color;
+    color: $sub-color;
+}
